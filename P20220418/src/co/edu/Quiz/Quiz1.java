@@ -16,6 +16,5 @@ public class Quiz1 {
 		System.out.println("섭씨 온도는 " + c + "도 입니다.");
 
 		//System.out.println("섭씨 온도는 " + 5/9(F-32));
-		
 	}
 }

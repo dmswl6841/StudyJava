@@ -19,7 +19,9 @@ public class Quiz2 {
 		
 		int num = (int) (Math.random()*3);
 
-		if (RCP == 0) {
+		if (RCP > 2) {
+			System.out.println("0~2 사이의 숫자를 입력해 주세요.");
+		} else if (RCP == 0) {
 			System.out.println("user : 가위");
 		} else if (RCP == 1){
 			System.out.println("user : 바위");
@@ -37,15 +39,17 @@ public class Quiz2 {
 		
 		if (RCP == num) {
 			System.out.println("비겼습니다.");
+		} else if (RCP > 2) {
+			System.out.println("ERROR");
 		} else if (RCP == 0 && num == 2) {
 			System.out.println("이겼습니다.");
 		} else if (RCP > num) {
 			System.out.println("이겼습니다.");
 		} else if (RCP == 2 && num == 0) {
 			System.out.println("졌습니다.");
-		} else {
+		} else  {
 			System.out.println("졌습니다.");
-		}
+		} 
 	}
 
 }
