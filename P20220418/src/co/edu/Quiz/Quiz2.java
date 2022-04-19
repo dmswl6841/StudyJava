@@ -17,16 +17,7 @@ public class Quiz2 {
 		
 		RCP = Integer.parseInt(sc.nextLine());
 		
-		int num = (int) (Math.random()*2) + 1;
-		
-		if (num == 0) {
-			System.out.println("컴퓨터 : 가위");
-		} else if (num == 1){
-			System.out.println("컴퓨터 : 바위");
-		} else {
-			System.out.println("컴퓨터 : 보");
-		}
-		
+		int num = (int) (Math.random()*3);
 
 		if (RCP == 0) {
 			System.out.println("user : 가위");
@@ -34,6 +25,14 @@ public class Quiz2 {
 			System.out.println("user : 바위");
 		} else {
 			System.out.println("user : 보");
+		}
+		
+		if (num == 0) {
+			System.out.println("컴퓨터 : 가위");
+		} else if (num == 1){
+			System.out.println("컴퓨터 : 바위");
+		} else {
+			System.out.println("컴퓨터 : 보");
 		}
 		
 		if (RCP == num) {
@@ -44,7 +43,7 @@ public class Quiz2 {
 			System.out.println("이겼습니다.");
 		} else if (RCP == 2 && num == 0) {
 			System.out.println("졌습니다.");
-		} else if (RCP < num) {
+		} else {
 			System.out.println("졌습니다.");
 		}
 	}

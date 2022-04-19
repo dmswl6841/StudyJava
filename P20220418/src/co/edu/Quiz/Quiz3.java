@@ -11,7 +11,7 @@ public class Quiz3 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("점수를 입력하세요.");
+		System.out.println("학점을 입력하세요.");
 		int score;
 		score = Integer.parseInt(sc.nextLine());
 	
@@ -32,7 +32,7 @@ public class Quiz3 {
 				.println("A");
 				break;
 			default:
-				System.out.println("학고");
+				System.out.println("학사경고");
 		}
 	}	
 

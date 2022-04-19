@@ -12,27 +12,10 @@ public class Quiz1 {
 		System.out.println("화씨 온도를 입력하세요.");
 		double F;
 		F = Double.parseDouble(sc.nextLine());
-		double c = (double) 5.0 / 9.0 * ( F - 32.0);
-		System.out.println("섭씨 온도는 " + c + "입니다.");
+		int c = (int) (( F - 32.0 ) * 5.0 / 9.0);
+		System.out.println("섭씨 온도는 " + c + "도 입니다.");
 
 		//System.out.println("섭씨 온도는 " + 5/9(F-32));
-		
-		
-		
-		
-
-
-		
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 }
