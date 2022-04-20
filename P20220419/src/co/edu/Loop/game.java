@@ -6,10 +6,10 @@ public class game {
 
 	public static void main(String[] args) {
 
-		Scanner sc = new Scanner(System.in);
-		
-		boolean A = true;
-		while (A); {
+
+Scanner sc = new Scanner(System.in);
+				
+		while (true) {
 			System.out.println("무엇을 내시겠습니까?");
 			System.out.println("0 : 가위, 1 : 바위, 2 : 보");
 			
@@ -37,10 +37,10 @@ public class game {
 				System.out.println("컴퓨터 : 보");
 			}
 			
-			if (RCP == num) {
-				System.out.println("비겼습니다.");
-			} else if (RCP > 2) {
+			if (RCP > 2) {
 				System.out.println("ERROR");
+			} else if (RCP == num) {
+				System.out.println("비겼습니다.");
 			} else if (RCP == 0 && num == 2) {
 				System.out.println("이겼습니다.");
 			} else if (RCP > num) {
@@ -50,14 +50,25 @@ public class game {
 			} else  {
 				System.out.println("졌습니다.");
 			} 
-		}
-		System.out.println("다시 도전하시겠습니까?");
-		boolean Y = true;
-		if (Y) {
 			
-		}
-		
-		
-	}
+			System.out.println("게임을 시작 하시겠습니까?\ny or n");	
+			String answer;
+			answer = sc.nextLine();
+			if(answer.equals("y")) {
+				continue;
+			}
+			else if(answer.equals("n")) {
+				break;
+			}
+			else {
+				System.out.println("ERROR!");
+				System.out.println("종료 후 다시 시작해주세요.");
+				break;
+			}
 
+		}
+			
+	}
+	
 }
+
