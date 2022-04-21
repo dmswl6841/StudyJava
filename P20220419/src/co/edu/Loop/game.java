@@ -43,15 +43,15 @@ Scanner sc = new Scanner(System.in);
 				System.out.println("비겼습니다.");
 			} else if (RCP == 0 && num == 2) {
 				System.out.println("이겼습니다.");
-			} else if (RCP > num) {
-				System.out.println("이겼습니다.");
 			} else if (RCP == 2 && num == 0) {
 				System.out.println("졌습니다.");
+			} else if (RCP > num) {
+				System.out.println("이겼습니다.");
 			} else  {
 				System.out.println("졌습니다.");
 			} 
 			
-			System.out.println("게임을 시작 하시겠습니까?\ny or n");	
+			System.out.println("계속 하시겠습니까?\ny or n");	
 			String answer;
 			answer = sc.nextLine();
 			if(answer.equals("y")) {
@@ -62,7 +62,7 @@ Scanner sc = new Scanner(System.in);
 			}
 			else {
 				System.out.println("ERROR!");
-				System.out.println("종료 후 다시 시작해주세요.");
+				System.out.println("다시 시작해주세요.");
 				break;
 			}
 

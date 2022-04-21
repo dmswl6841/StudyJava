@@ -37,10 +37,10 @@ public class Quiz2 {
 			System.out.println("컴퓨터 : 보");
 		}
 		
-		if (RCP == num) {
-			System.out.println("비겼습니다.");
-		} else if (RCP > 2) {
+		if (RCP > 2) {
 			System.out.println("ERROR");
+		} else if (RCP == num) {
+			System.out.println("비겼습니다.");
 		} else if (RCP == 0 && num == 2) {
 			System.out.println("이겼습니다.");
 		} else if (RCP > num) {

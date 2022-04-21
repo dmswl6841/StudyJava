@@ -10,29 +10,45 @@ public class Exam2 {
 		// 3. 피보나치 수열
 		
 		//1. 
-//		Scanner sc = new Scanner(System.in);
-//		
-//		int fir;
-//		int sec;
-//		int thr;
-//		int max;
-//		System.out.println("첫번째 숫자를 입력하세요.");
-//		fir = sc.nextInt();
-//		System.out.println("두번째 숫자를 입력하세요.");
-//		sec = sc.nextInt();
-//		System.out.println("세번째 숫자를 입력하세요.");
-//		thr = sc.nextInt();
-//		
-//		max = fir;
+		Scanner sc = new Scanner(System.in);
+		
+		int fir, sec, thr, max, min;
+		
+		System.out.println("첫번째 숫자를 입력하세요.");
+		fir = sc.nextInt();
+		System.out.println("두번째 숫자를 입력하세요.");
+		sec = sc.nextInt();
+		System.out.println("세번째 숫자를 입력하세요.");
+		thr = sc.nextInt();
+		
+		max = fir;
+		
+		if (max <sec) {
+			max = sec;
+		}
+		if (max<thr) {
+			max=thr;
+		}
+		
+		min = fir;
+		
+		if (min >sec) {
+			min = sec;
+		}
+		if (min>thr) {
+			min=thr;
+		}
+		
+		System.out.println("최댓값 : "+ max + "\n최솟값 : "+ min);
 		
 		//2
-//		for (int i = 1; i<=6; i++);
-//			int dice1 = (int)(Math.random()*6)+1;
-//			int dice2 = (int)(Math.random()*6)+1;
-//			if(dice1 + dice2 == 6) {
-//				System.out.println("주사위 " + dice1 + ", 주사위 " + dice2);
-//			}
-//				
+		for (int i = 1; i<=6; i++);
+			int dice1 = (int)(Math.random()*6)+1;
+			int dice2 = (int)(Math.random()*6)+1;
+			if(dice1 + dice2 == 6) {
+				System.out.println("주사위 " + dice1 + ", 주사위 " + dice2);
+			}
+				
 		
 		//3
 		int num1 =1;
@@ -44,7 +60,6 @@ public class Exam2 {
 			System.out.println(num1 + ", " + num2 + "=" + num3);
 			num1 =num2;
 			num2 = num3;
-			
 		}
 	}
 
