@@ -19,7 +19,7 @@ public class BankMain {
 		System.out.println("1. 예금 | 2. 출금 | 3. 잔액 | 4. 종료");
 		System.out.println("선택 >");
 		
-		menu = Integer.parseInt(sc.nextLine());
+		menu = Integer.parseInt(sc.nextLine());8
 		
 		if(menu==1) {
 			System.out.println("예금할 금액을 입력하세요.");
