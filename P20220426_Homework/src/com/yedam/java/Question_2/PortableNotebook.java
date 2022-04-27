@@ -23,12 +23,11 @@ public class PortableNotebook implements Notebook, Tablet {
 	public PortableNotebook() {
 		String nowMode = null;
 		if(mode == NOTEBOOK_MODE) {
-			nowMode ="TABLET_MODE";
+			nowMode ="NOTEBOOK_MODE";
 			System.out.println("현재 모드 : " + nowMode);
 		}
 		else if(mode == TABLET_MODE) {
-			mode = NOTEBOOK_MODE;
-			nowMode ="NOTEBOOK_MODE";
+			nowMode ="TABLET_MODE";
 			System.out.println("현재 모드 : " + nowMode);
 		}
 	}
