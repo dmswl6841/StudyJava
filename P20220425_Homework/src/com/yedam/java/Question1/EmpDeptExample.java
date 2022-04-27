@@ -7,11 +7,15 @@ public class EmpDeptExample {
 //		수퍼클래스
 //		서브클래스
 		
-		EmpDept emp = new EmpDept();
-		emp.name = "이지나";
-		emp.salary = 3000;
-		emp.Dept = "교육부";
+//		EmpDept emp = new EmpDept();
+//		emp.name = "이지나";
+//		emp.salary = 3000;
+//		emp.Dept = "교육부";
+//		
+//		emp.getInformation();
+//		emp.print();
 		
+		EmpDept emp = new EmpDept("이지나", "교육부", 3000);
 		emp.getInformation();
 		emp.print();
 		

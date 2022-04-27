@@ -25,19 +25,60 @@ public class School {
 		
 	}
 
-	public School(int studentNo, String studentName, int kor, int eng, int math) {
-		super();
+//	public School(int studentNo, String studentName, int kor, int eng, int math) {
+//		super();
+//		this.studentNo = studentNo;
+//		this.studentName = studentName;
+//		this.kor = kor;
+//		this.eng = eng;
+//		this.math = math;
+//	}
+
+	//메소드
+	public int getStudentNo() {
+		return studentNo;
+	}
+
+	public void setStudentNo(int studentNo) {
 		this.studentNo = studentNo;
+	}
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
 		this.studentName = studentName;
+	}
+
+	public int getKor() {
+		return kor;
+	}
+
+	public void setKor(int kor) {
 		this.kor = kor;
+	}
+
+	public int getEng() {
+		return eng;
+	}
+
+	public void setEng(int eng) {
 		this.eng = eng;
+	}
+
+	public int getMath() {
+		return math;
+	}
+
+	public void setMath(int math) {
 		this.math = math;
 	}
 	
-	//메소드
-	public void info() {
-		System.out.println("학번>");
+	public int info() {
+		System.out.println("이름 > ");
 	}
+	
 
 	
 }

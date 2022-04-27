@@ -14,11 +14,11 @@ public class PortableNotebook implements Notebook, Tablet {
 //	- TABLET_MODE : "'앱종류'를 실행."을 출력한다.
 //(5) public void changeMode() : 모드를 바꾸고 현재 모드를 출력하는 기능 ( NOTEBOOK_MODE -> TABLET_MODE / TABLET_MODE -> NOTEBOOK_MODE)
 	
-	public int mode;
-	public String writeDocumentaion;
-	public String searchInternet;
-	public String watchVideo;
-	public String useApp;
+	private int mode;
+	private String writeDocumentaion;
+	private String searchInternet;
+	private String watchVideo;
+	private String useApp;
 	
 	public PortableNotebook() {
 		String nowMode = null;

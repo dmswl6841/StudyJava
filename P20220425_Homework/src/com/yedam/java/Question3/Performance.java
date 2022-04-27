@@ -10,7 +10,5 @@ public class Performance extends Culture{
 	//생성자
 	
 	//메소드
-	public abstract void getInformation() {
-		System.out.println("제목 : "+ );
-	}
+	public abstract void getInformation();
 }

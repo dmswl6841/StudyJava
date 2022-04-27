@@ -32,6 +32,7 @@ public class Main {
 				stdCount = new int [stdNo][4];
 			}
 			else if (menu == 2) {
+				System.out.println("학생 정보 입력 >");
 				for(int i=0; i<stdCount.length; i++) {
 					for(int j=0; j<4; j++) {
 						
@@ -40,15 +41,15 @@ public class Main {
 				
 //			}
 //			if (menu == 3) {
-//				System.out.println("학생 수 >");
+//				System.out.println("학생 정보 출력 >");
 //				stdCount = Integer.parseInt(sc.nextLine());
 //			}
 //			if (menu == 4) {
-//				System.out.println("학생 수 >");
+//				System.out.println("순위 >");
 //				stdCount = Integer.parseInt(sc.nextLine());
 //			}
 //			if (menu == 5) {
-//				System.out.println("학생 수 >");
+//				System.out.println("종료 >");
 //				stdCount = Integer.parseInt(sc.nextLine());
 			}
 		}

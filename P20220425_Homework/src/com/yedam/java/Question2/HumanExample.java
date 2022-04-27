@@ -7,18 +7,22 @@ public class HumanExample {
 //		박둘이님의 신장 168, 몸무게 90, 비만입니다.
 		
 		
-		StandardWeightInfo stand = new StandardWeightInfo();
-		stand.name = "홍길동";
-		stand.hight = 168;
-		stand.weight = 45;
-		stand.getInformation();
+		Human human = null;
 		
-		ObesityInfo obes = new ObesityInfo();
-		obes.name = "박둘이";
-		obes.hight = 168;
-		obes.weight = 90;
-		obes.getInformation();
+		human = new StandardWeightInfo()
 		
+//		StandardWeightInfo stand = new StandardWeightInfo();
+//		stand.name = "홍길동";
+//		stand.hight = 168;
+//		stand.weight = 45;
+//		stand.getInformation();
+//		
+//		ObesityInfo obes = new ObesityInfo();
+//		obes.name = "박둘이";
+//		obes.hight = 168;
+//		obes.weight = 90;
+//		obes.getInformation();
+//		
 		
 
 	}

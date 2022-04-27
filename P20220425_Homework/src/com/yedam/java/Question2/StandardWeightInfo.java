@@ -25,4 +25,13 @@ public class StandardWeightInfo extends Human {
 	public void getInformation() {
 		System.out.println("이름 : "+name + " 키 : " + hight + " 몸무게 : "+ weight + " 표준 체중 : " + getStandardWeight());
 	}
+	
+//	@Override
+//	public void getInformation() {
+//		super.getInformation();
+//		System.out.printf(",표준 체중 %.1f입니다.\n", getInformation());
+//	}
+//	public double getInformation() {
+//		return (double)((this.hight - 100)*0.9);
+//	}
 }

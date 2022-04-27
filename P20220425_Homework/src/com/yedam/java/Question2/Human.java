@@ -28,4 +28,8 @@ public class Human {
 	public void getInformation() {
 		System.out.println("이름 : "+name + " 키 : " + hight + " 몸무게 : "+ weight);
 	}
+	
+//	public void getInformation() {
+//		System.out.print("이름 : "+name + " 키 : " + hight + " 몸무게 : "+ weight);
+//	}
 }

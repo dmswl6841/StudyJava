@@ -12,6 +12,10 @@ public class EmpDept extends Employee{
 	public String Dept;
 
 	//생성자
+	public EmpDept(String name,int salary,String Dept) {
+		this.name = name;
+		this.salary=salary;
+	}
 	public String getDept() {
 		return Dept;
 	}
@@ -26,5 +30,8 @@ public class EmpDept extends Employee{
 	public void print() {
 		System.out.println("슈퍼클래스\n서브클래스");
 	}
-	
+//	public void print() {
+//		super.print():
+//		System.out.println("서브클래스");
+//	}
 }

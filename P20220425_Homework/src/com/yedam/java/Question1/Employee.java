@@ -13,6 +13,10 @@ public class Employee {
 	public String name;
 	public int salary =0;
 	//생성자
+//	public Employee() {
+//		this.name = name;
+//		this.salary=salary;
+//	}
 	public String getName() {
 		return name;
 	}

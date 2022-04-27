@@ -17,6 +17,8 @@ public abstract class Culture {
 	int score;
 	
 	//생성자
+	public Culture() {
+	}
 	public Culture(String name, int directorNum, int actNum) {
 		super();
 		this.name = name;
@@ -26,11 +28,31 @@ public abstract class Culture {
 	
 	//메소드
 	public void setTotalScore(int score) {
-		audience += audience;
-		score += score;
+		this.audience++;
+		this.score += score;
 	}
 	public String getGrade() {
 		
+		if(getGrade() =="1") {
+			System.out.println("☆");
+		}
+		else if(getGrade() =="2") {
+			System.out.println("☆☆");
+		}
+		else if(getGrade() =="3") {
+			System.out.println("☆☆☆");
+		}
+		else if(getGrade() =="4") {
+			System.out.println("☆☆☆☆");
+		}
+		else if(getGrade() =="5") {
+			System.out.println("☆☆☆☆☆");
+		}
+		else {
+			System.out.println("1~5사이의 수를 입력해 주세요.");
+		}
+		
+		return null ;
 	}
 	public abstract void getInformation();
 
