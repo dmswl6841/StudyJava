@@ -22,16 +22,13 @@ public class Question2 {
 			System.out.print("1과 100사이의 값을 입력하세요 : ");
 			try {
 			input = Integer.parseInt(sc.next());
-				if(answer>input) {
+				if(input>100 || input<1) {
+					System.out.println("입력한 수가 범위를 벗어났습니다.");
+				}else if(answer>input) {
 					System.out.println("더 큰 수를 입력하세요.");
-			
 				}else if(answer<input) {
 					System.out.println("더 작은 수를 입력하세요.");
-				}else if(input>100 && input<1) {
-					System.out.println("1과 100사이의 값을 입력하세요");
-				}
-				
-				else if(answer==input) {
+				}else if(answer==input) {
 					System.out.println("맞췄습니다.");
 					System.out.println("시도 횟수는 "+count + "번 입니다.");
 					break;
